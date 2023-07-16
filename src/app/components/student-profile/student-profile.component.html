@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="main">
+        <label>Welcome</label>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>{{name}}</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>{{class}}</td>
+            </tr>
+            <tr>
+                <td>Roll No.</td>
+                <td>{{rollno}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="main">
+        <form action="/showresult" method="post">
+            <label class="smalllabel">Choose Your Term</label>
+            <select name="term" id="term">
+                <option value="">Select</option>
+                <option value="term1">Term1</option>
+                <option value="term2">Term2</option>
+                <option value="term3">Term3</option>
+                <option value="finalterm">Final Term</option>
+            </select>
+            <button>Show</button>
+        </form>
+    </div>
+</body>
+</html>
