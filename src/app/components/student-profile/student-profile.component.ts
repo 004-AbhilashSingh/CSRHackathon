@@ -11,4 +11,10 @@ export class StudentProfileComponent {
   @Input() name?:String = 'Abhilash'
   @Input() class?:String = 'MCA'
   @Input() rollno?:String = '205121004'
+
+  showresult:boolean = false;
+
+  showResult():void{
+    this.showresult = !this.showresult
+  }
 }

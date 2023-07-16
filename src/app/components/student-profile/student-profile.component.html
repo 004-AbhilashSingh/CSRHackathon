@@ -24,7 +24,7 @@
         </table>
     </div>
     <div class="main">
-        <form action="/showresult" method="post">
+        <form>
             <label class="smalllabel">Choose Your Term</label>
             <select name="term" id="term">
                 <option value="">Select</option>
@@ -33,8 +33,30 @@
                 <option value="term3">Term3</option>
                 <option value="finalterm">Final Term</option>
             </select>
-            <button>Show</button>
         </form>
+        <button (click)="showResult()">Show</button>
+        <table *ngIf="showresult">
+            <tr>
+                <th class="result">Subject</th>
+                <th class="result">Grades</th>
+            </tr>
+            <tr>
+                <td class="result">Subject 1</td>
+                <td class="result">8.34</td>
+            </tr>
+            <tr>
+                <td class="result">Subject 2</td>
+                <td class="result">8.34</td>
+            </tr>
+            <tr>
+                <td class="result">Subject 3</td>
+                <td class="result">8.34</td>
+            </tr>
+            <tr>
+                <th class="result">Total</th>
+                <th class="result">8.34</th>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
