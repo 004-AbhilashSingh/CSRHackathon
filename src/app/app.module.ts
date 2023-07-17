@@ -8,12 +8,15 @@ import { LoginComponent } from './components/login/login.component';
 import { FacultyLoginComponent } from './components/faculty-login/faculty-login.component';
 import { HomeComponent } from './components/home/home.component';
 import { StudentProfileComponent } from './components/student-profile/student-profile.component';
+import { FacultyModifyDataComponent } from './faculty-modify-data/faculty-modify-data.component';
 
 const appRoutes:Routes = [
   {path:'',component:HomeComponent},
   {path:'studentlogin',component:StudentLoginComponent},
   {path:'facultylogin',component:FacultyLoginComponent},
-  {path:'studentprofile',component:StudentProfileComponent}
+  {path:'studentprofile',component:StudentProfileComponent},
+  { path: 'facultymodifydata', component:FacultyModifyDataComponent}
+ 
 ];
 
 @NgModule({
@@ -23,7 +26,8 @@ const appRoutes:Routes = [
     LoginComponent,
     FacultyLoginComponent,
     HomeComponent,
-    StudentProfileComponent
+    StudentProfileComponent,
+    FacultyModifyDataComponent
   ],
   imports: [
     BrowserModule,
